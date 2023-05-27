@@ -1,7 +1,11 @@
+import Counter from "@/components/counter"
+import { mount } from "cypress/react18"
+import React from "react"
 
 
 describe('App.cy.tsx - test for Welcome page', () => {
   it('playground', () => {
+    mount(<Counter />)
     
   })
 
