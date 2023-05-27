@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "cypress:open": "cypress open",
-    "cypress:dev": "cypress run"
+    "cypress:dev": "cypress run --component"
   },
   "dependencies": {
     "@types/node": "20.2.1",
