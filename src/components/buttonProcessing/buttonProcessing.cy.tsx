@@ -12,7 +12,7 @@ it('Check if processing button is enabled', () => {
   cy.get('button').should('be.enabled')
 });
 
-it('Check if processing button is enabled', () => {
+it('Check if processing button has proper text in it', () => {
   mount(<ButtonProcessing />);
   cy.get('button').should('have.text', 'Push me!')
 });
