@@ -142,4 +142,4 @@ export default function HorizontalCard() {
       </div>
     </div>
   );
-}
+} 

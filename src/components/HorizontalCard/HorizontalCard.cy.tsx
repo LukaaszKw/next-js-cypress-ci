@@ -26,4 +26,4 @@ describe('HorizontalCard component tests', () => {
     cy.get(':nth-child(3) > .mt-2').should('be.visible')
     cy.get('.mt-2 > .h-full').should('be.visible')
 })
-});
+});  
