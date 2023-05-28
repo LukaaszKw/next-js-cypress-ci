@@ -7,7 +7,7 @@ export default function Counter() {
  
   return (
     <div>
-      <p>You clicked {count} times</p>
+      <p data-cy-id="count-value">You clicked {count} times</p>
       <button data-cy-id="count" onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
