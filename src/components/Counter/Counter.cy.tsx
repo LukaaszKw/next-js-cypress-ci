@@ -1,5 +1,5 @@
 import { mount } from '@cypress/react18';
-import Counter from './counter';
+import Counter from '../Counter/Counter';
 
 describe('Counter component tests', () => {
   it('Shoud be mounted', () => {
