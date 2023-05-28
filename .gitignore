@@ -1,0 +1,24 @@
+node_modules
+# Ignore Next.js build output
+.next/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore Cypress generated files
+cypress/videos/
+cypress/screenshots/
+
+# Ignore environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
