@@ -3,6 +3,7 @@ import FancyButton from '@/components/FancyButton/FancyButton'
 import HoverButton from '@/components/HoverButton/HoverButton'
 import HorizonUI from '@/components/HorizonUI/HorizonUI'
 import React from 'react'
+import ButtonProcessing from '@/components/buttonProcessing/buttonProcessing'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HoverButton/>
       <HorizonUI />
       <Table/>
+      <ButtonProcessing/>
     </main>
   )
 }
