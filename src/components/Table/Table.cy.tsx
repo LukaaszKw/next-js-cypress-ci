@@ -1,5 +1,6 @@
 import React from 'react'
 import Table from './Table'
+import { contains } from 'cypress/types/jquery'
 
 describe('Table component tests', () => {
   it('Should be mounted', () => {
@@ -19,26 +20,26 @@ describe('Table component tests', () => {
     })
   it('Should contain tabs', () => {
     cy.mount(<Table />)
-    cy.get("[data-test-id='tabs']")
+    cy.get("[data-test-id='tabs']").should('be.visible', 'tabs')
   })
   it('Should contain tab All', () => {
     cy.mount(<Table />)
-    cy.get("[data-test-id='All']")
+    cy.get("[data-test-id='All']").should('have.text', 'All')
   })
   it('Should contain tab Done', () => {
     cy.mount(<Table />)
-    cy.get("[data-test-id='Done']")
+    cy.get("[data-test-id='Done']").should('have.text', 'Done')
   })
   it('Should contain tab Pending', () => {
     cy.mount(<Table />)
-    cy.get("[data-test-id='Pending']")
+    cy.get("[data-test-id='Pending']").should('have.text', 'Pending')
   })
   it('Should contain UX Wireframes', () => {
     cy.mount(<Table />)
-    cy.get("[data-test-id='UX Wireframes']")
+    cy.get("[data-test-id='UX Wireframes']").should('contain', 'UX Wireframes')
   })
   it('Should contain Checkbox UX', () => {
     cy.mount(<Table />)
-    cy.get("[data-test-id='Checkbox UX']")
+    cy.get("[data-test-id='Checkbox UX']").click()
   })
 })
