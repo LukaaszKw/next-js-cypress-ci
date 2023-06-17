@@ -1,3 +1,4 @@
+import Table from '@/components/Table/Table'
 import FancyButton from '@/components/FancyButton/FancyButton'
 import HoverButton from '@/components/HoverButton/HoverButton'
 import HorizonUI from '@/components/HorizonUI/HorizonUI'
@@ -9,6 +10,7 @@ export default function Home() {
       <FancyButton />
       <HoverButton/>
       <HorizonUI />
+      <Table/>
     </main>
   )
 }
