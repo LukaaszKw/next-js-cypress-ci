@@ -1,4 +1,4 @@
-// File: /Users/lkw/Desktop/next-cypress/next-js-cypress-ci/src/app/layout.tsx
+// File: C:\Users\Kruszynka\Desktop\cypress-automation\next-js-cypress-ci\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
