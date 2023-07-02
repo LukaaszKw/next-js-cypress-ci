@@ -13,6 +13,6 @@ describe('NewObject component tests', () => {
    // mount(<NewObject />);
     cy.get("[data-cy-id='button']")
     .should('be.visible')
-    .and('contain', 'New Object');
+    .and('contain', 'NewObject');
   });
 });
