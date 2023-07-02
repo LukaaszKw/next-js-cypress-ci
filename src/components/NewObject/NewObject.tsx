@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
  
 export default function NewObject() {
-  const [count, setCount] = useState(0);
  
   return (
     <div className="relative flex min-h-screen flex-col space-y-10 justify-center overflow-hidden py-6 sm:py-12">
