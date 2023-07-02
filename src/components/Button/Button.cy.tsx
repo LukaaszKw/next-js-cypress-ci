@@ -1,5 +1,5 @@
-import { mount } from '@cypress/react18';
-import Counter from './Counter';
+import { mount } from 'cypress/react18'
+import Button from './Button';
 
 describe('Button component tests', () => {
   it('Button component should be mounted', () => {
@@ -7,15 +7,6 @@ describe('Button component tests', () => {
   });
 
   it('Button component tests', () => {
-    it('Button component should be mounted', () => {
       mount(<Button />);
     });
-
-  it('Button component tests', () => {
-    it('Button component should be mounted', () => {
-      mount(<Button />);
-    });
-
-
-
 });
