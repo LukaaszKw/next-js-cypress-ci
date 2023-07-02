@@ -8,7 +8,8 @@ describe('FancyButton component tests', () => {
 
   it('Shoud be visible and have text', () => {
     mount(<FancyButton />);
-    cy.get("[data-cy-id='button']")
+    cy.get("[data-cy-id='button']").as('button')
+    cy.get('button')
     .should('be.visible')
     .and('contain', 'Fancy button');
   });
