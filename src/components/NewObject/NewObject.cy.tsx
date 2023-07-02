@@ -1,7 +1,7 @@
 import { mount } from '@cypress/react18';
 import NewObject from '../NewObject/NewObject';
 
-describe('FancyButton component tests', () => {
+describe('NewObject component tests', () => {
   it('Shoud be mounted', () => {
     mount(<NewObject />);
   });
