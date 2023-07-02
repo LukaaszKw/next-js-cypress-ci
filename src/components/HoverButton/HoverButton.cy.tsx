@@ -7,12 +7,10 @@ describe('Hover Button component tests', () => {
     });
     
     afterEach('Check if button is enabled', () => {
-    mount(<HoverButton />);
-    cy.get('button').should('be.enabled')
+    cy.get("[button-id='button']").should('be.enabled')
     });
 
     it('Check if button contains text', () => {
-    mount(<HoverButton />);
     cy.get("[button-id='button']").should('have.text', 'Naciśnij!')
     });
 
