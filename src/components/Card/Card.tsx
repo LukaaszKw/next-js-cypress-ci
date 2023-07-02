@@ -2,12 +2,25 @@
 
 import React from 'react';
 
-export default function Counter() {
+export default function Card() {
 
 
   return (
-    <div className="relative flex min-h-screen flex-col space-y-10 justify-center overflow-hidden bg-slate-50 py-6 sm:py-12">
-      <button className="bg-gradient-to-b w-max mx-auto text-blue-500 font-semibold from-slate-50 to-blue-100 px-10 py-3 rounded-2xl shadow-blue-400 shadow-md border-b-4 hover border-b border-blue-200 hover:shadow-sm transition-all duration-500">Fancy button</button>
+   <>
+   <div className="max-w-lg mx-auto my-10 bg-white rounded-lg shadow-md p-5">
+    <img className="w-32 h-32 rounded-full mx-auto" src="picsum.photos/200" alt="Profile picture"/>
+    <h2 className="text-center text-2xl font-semibold mt-3">John Doe</h2>
+    <p className="text-center text-gray-600 mt-1">Software Engineer</p>
+    <div className="flex justify-center mt-5">
+      <a href="#" className="text-blue-500 hover:text-blue-700 mx-3">Twitter</a>
+      <a href="#" className="text-blue-500 hover:text-blue-700 mx-3">LinkedIn</a>
+      <a href="#" className="text-blue-500 hover:text-blue-700 mx-3">GitHub</a>
     </div>
-  );
+    <div className="mt-5">
+      <h3 className="text-xl font-semibold">Bio</h3>
+      <p className="text-gray-600 mt-2">John is a software engineer with over 10 years of experience in developing web and mobile applications. He is skilled in JavaScript, React, and Node.js.</p>
+    </div>
+  </div>
+  </>
+  )
 }
